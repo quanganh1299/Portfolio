@@ -5,7 +5,8 @@
     --text-button-color: #fff;
     --linear-background-color: linear-gradient(to bottom right, #00aeff, #08b8cc, white);
     --text-color: #000;
-    --youtube-color: #ff0000;
+    --mail-color: #FAB005;
+    --phone-color: #0B9444;
     --facebook-color: #1877F2;
     --github-color: #800080;
     --container-color: #d3d3d3;
@@ -100,16 +101,25 @@ body {
     padding: .5rem;
 }
 
-#profile_icon .fa-youtube :hover{
-    color: var(--youtube-color);
+#profile_icon a:hover .icon{
+    transform: scale(1.5);
+    transition: 0.4s ease-in;
 }
 
-#profile_icon .fa-facebook :hover{
+#profile_icon a:hover .fa-envelope{
+    color: var(--mail-color);
+}
+
+#profile_icon a:hover .fa-facebook{
     color: var(--facebook-color);
 }
 
-#profile_icon .fa-github :hover{
+#profile_icon a:hover .fa-github{
     color: var(--github-color);
+}
+
+#profile_icon a:hover .fa-phone{
+    color: var(--phone-color);
 }
 
 #row_profile #contact {
@@ -453,7 +463,3 @@ footer {
         width: 100%;
     }
 }
-  
-  
-
-
